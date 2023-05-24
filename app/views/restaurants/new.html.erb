@@ -1,0 +1,8 @@
+<h1>Hallo</h1>
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, placeholder: 'Choose chinese, italian, japanese, french or belgian' %>
+  <%= f.submit %>
+<% end %>
